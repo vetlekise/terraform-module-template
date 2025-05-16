@@ -26,8 +26,8 @@ module "example" {
 
 > Start of generated docs by terraform-docs
 
-``
-``
+<!-- BEGIN_TF_DOCS -->
+<!-- END_TF_DOCS -->
 
 > End of generated docs by terraform-docs
 
