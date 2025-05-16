@@ -6,6 +6,8 @@
 
 ## Usage
 
+Below is a basic example of how to use this module. For more detailed examples, please refer to the [examples](./examples) directory.
+
 ```terraform
 module "example" {
   # Use commit hash to prevent supply chain attacks.
@@ -22,7 +24,12 @@ module "example" {
 }
 ```
 
-See the [examples](./examples) directory for more usage examples. 
+> Start of generated docs by terraform-docs
+
+``
+``
+
+> End of generated docs by terraform-docs
 
 ## Requirements
 

@@ -20,3 +20,10 @@ This file provides the necessary information to describe how to use the template
 |--|--|
 | [.github/workflows/release-drafter.yml](./.github/workflows/release-drafter.yml) | Contains the workflow that runs Release Drafter. |
 | [.github/release-drafter.yml](./.github/release-drafter.yml) | Contains the configuration of Release Drafter. |
+
+### [Terraform Docs](https://github.com/terraform-docs/terraform-docs/?tab=readme-ov-file)
+#### Configuration
+| File | Description |
+|--|--|
+| [.github/workflows/terraform-docs.yml](./.github/workflows/terraform-docs.yml) | Contains the workflow that runs Terraform Docs. |
+| [.terraform-docs.yml](./.terraform-docs.yml) | Contains the configuration of Terraform Docs. |

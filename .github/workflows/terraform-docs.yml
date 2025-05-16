@@ -1,0 +1,39 @@
+name: Generate Terraform Docs
+
+on:
+  # Run on pushes to the main branch (or your default branch)
+  push:
+    branches:
+      - main # Or your default branch (e.g., master)
+  # Run on pull requests targeting the main branch
+  pull_request:
+    branches:
+      - main # Or your default branch
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4 # Use the latest version
+        with:
+          # For PRs, checkout the head of the PR
+          # For pushes, this will be the commit that triggered the workflow
+          ref: ${{ github.event.pull_request.head.ref || github.ref }}
+
+      - name: Render terraform docs and push changes back
+        uses: terraform-docs/gh-actions@main # Or pin to a specific version e.g. v1.2.0
+        with:
+          # Path to the working directory (where your .tf files and .terraform-docs.yml are)
+          working-dir: .
+          # The output file, should match your .terraform-docs.yml
+          output-file: README.md
+          # The output method, should match your .terraform-docs.yml
+          output-method: inject
+          # Whether to push changes back to the branch.
+          # For PRs, it will push to the PR branch.
+          # For pushes to main, it will push to main.
+          git-push: "true"
+          # Optional: if you want to use a specific git commit user
+          # git-commit-user: "github-actions[bot]"
+          # git-commit-email: "github-actions[bot]@users.noreply.github.com"
