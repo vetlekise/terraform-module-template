@@ -1,4 +1,4 @@
-name: Generate Terraform Docs
+name: Terraform Docs
 
 on:
   # Run on pushes to the main branch (or your default branch)
