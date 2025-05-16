@@ -1,4 +1,4 @@
-name: TFLint
+name: TFLint & Trivy
 
 on:
   push:
@@ -31,3 +31,14 @@ jobs:
         run: tflint --recursive --format=compact
         # Available formats: default, json, checkstyle, junit, compact, sarif
         # Use --recursive if you have Terraform files in subdirectories
+
+      - name: Install Trivy
+        run: |
+          curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /usr/local/bin v0.62.1
+          # You can also use: brew install aquasecurity/trivy/trivy if brew is available
+
+      - name: Run Trivy IaC scan
+        run: trivy config --exit-code 1 --severity HIGH,CRITICAL --format table .
+        # Adjust --exit-code and --severity as needed for your policy
+        # For PR comments or artifact uploads, consider SARIF format:
+        # trivy config --exit-code 1 --severity HIGH,CRITICAL --format sarif --output trivy-results.sarif .
