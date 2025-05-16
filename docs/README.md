@@ -34,3 +34,16 @@ This file provides the necessary information to describe how to use the template
 |--|--|
 | [.github/workflows/terraform-linter.yml](./.github/workflows/terraform-docs.yml) | Contains the workflow that runs TFLint and Trivy. |
 | [.tflint.hcl](./.tflint.hcl) | Contains the configuration of TFLint. |
+
+### [Pre-commit](https://github.com/pre-commit/pre-commit)
+#### Configuration
+| File | Description |
+|--|--|
+| [.pre-commit-config.yaml](./.pre-commit-config.yaml) | Contains the configuration of pre-commit. |
+
+#### Usage
+1. Install pre-commit: `pip install pre-commit` or `brew install pre-commit`
+2. Install git hooks: `pre-commit install`
+3. Run manually: `pre-commit run --all-files`
+4. Run specific id: `pre-commit run <hook_id>`
+5. Skip hooks: `git commit --no-verify -m "Your commit message"`
