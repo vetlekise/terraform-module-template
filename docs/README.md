@@ -1,0 +1,22 @@
+# Information
+This file provides the necessary information to describe how to use the template.
+
+## File Structure
+| File | Description |
+|--|--|
+| [docs](./docs) | Additional documentation, images for README.md and more. |
+| [examples](./examples) | Executable example usage of the module. |
+| [modules](./modules) | Submodules used by the root module. |
+| [locals.tf](./locals.tf) | Defines named, reusable expressions within the module. |
+| [main.tf](./main.tf) | Core resources and their configurations. |
+| [outputs.tf](./outputs.tf) | Declares values to be outputted after applying. |
+| [variables.tf](./variables.tf) | Defines input parameters to customize the module. |
+| [versions.tf](./versions.tf) | Defines input parameters to customize the module. |
+
+## Dependencies
+### [Release Drafter](https://github.com/release-drafter/release-drafter)
+#### Configuration
+| File | Description |
+|--|--|
+| [.github/workflows/release-drafter.yml](./.github/workflows/release-drafter.yml) | Contains the workflow that runs Release Drafter. |
+| [.github/release-drafter.yml](./.github/release-drafter.yml) | Contains the configuration of Release Drafter. |

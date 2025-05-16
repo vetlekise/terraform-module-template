@@ -1,0 +1,60 @@
+name-template: 'v$RESOLVED_VERSION'
+tag-template: 'v$RESOLVED_VERSION'
+categories:
+  - title: '🚀 Features'
+    labels:
+      - 'enhancement'
+  - title: '🐛 Bug Fixes'
+    labels:
+      - 'bug'
+  - title: '🧰 Maintenance'
+    label: 'chore'
+  - title: '📖 Documentation'
+    label: 'documentation'
+
+exclude-labels:
+  - 'internal'
+
+change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
+version-resolver:
+  major:
+    labels:
+      - 'major'
+  minor:
+    labels:
+      - 'minor'
+  patch:
+    labels:
+      - 'patch'
+  default: patch
+template: |
+  ## What's Changed in v$RESOLVED_VERSION
+  $CHANGES
+
+  **Full Changelog**: https://github.com/$OWNER/$REPOSITORY/compare/$PREVIOUS_TAG...v$RESOLVED_VERSION
+
+  ## Contributors
+  $CONTRIBUTORS
+
+autolabeler:
+  - label: 'documentation' # This label will be applied
+    files: # If any of these files/paths are modified
+      - '*.md'
+      - 'docs/*'
+    branch: # Or if the PR is from a branch matching this regex
+      - '/docs{0,1}\/.+/'
+  - label: 'bug'
+    branch:
+      - '/bug\/.+/'
+      - '/fix\/.+/' # If branches are sometimes named fix/...
+    title:
+      - '/(bug|fix)/i' # Match bug, or fix in title
+  - label: 'enhancement'
+    branch:
+      - '/enhancement\/.+/'
+      - '/feature\/.+/'
+    title:
+      - '/(enhancement|feature|feat)/i'
+  - label: 'chore' # Example for labeling based on file type
+    files:
+      - '.github/workflows/*' # Changes to workflow files
