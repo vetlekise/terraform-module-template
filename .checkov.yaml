@@ -1,0 +1,9 @@
+{}
+#skip-check:
+#  - CKV_AWS_20 # Skip a specific check
+#  - CKV_GCP* # Skip all checks matching the wildcard
+# or
+#check:
+#  - CKV_AWS_19 # Only run this check
+#directory:
+#  - terraform # Specify directories to scan

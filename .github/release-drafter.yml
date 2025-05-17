@@ -34,24 +34,24 @@ template: |
   **Full Changelog**: https://github.com/$OWNER/$REPOSITORY/compare/$PREVIOUS_TAG...v$RESOLVED_VERSION
 
 autolabeler:
-  - label: 'documentation' # This label will be applied
-    files: # If any of these files/paths are modified
+  - label: 'documentation'
+    files:
       - '*.md'
       - 'docs/*'
-    branch: # Or if the PR is from a branch matching this regex
+    branch:
       - '/docs{0,1}\/.+/'
   - label: 'bug'
     branch:
       - '/bug\/.+/'
-      - '/fix\/.+/' # If branches are sometimes named fix/...
+      - '/fix\/.+/'
     title:
-      - '/(bug|fix)/i' # Match bug, or fix in title
+      - '/(bug|fix)/i'
   - label: 'enhancement'
     branch:
       - '/enhancement\/.+/'
       - '/feature\/.+/'
     title:
       - '/(enhancement|feature|feat)/i'
-  - label: 'chore' # Example for labeling based on file type
+  - label: 'chore'
     files:
-      - '.github/workflows/*' # Changes to workflow files
+      - '.github/workflows/*'
