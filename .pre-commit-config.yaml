@@ -25,9 +25,9 @@ repos:
         #   - --args=-var-file=dev.tfvars
         #   - --args=-var-file=prod.tfvars
 
-      - id: terraform_docs # Generates or updates documentation (e.g., README)
-        args:
-          - --hook-config=--path-to-file=README.md # Default path
+      #- id: terraform_docs # Generates or updates documentation (e.g., README)
+      #  args:
+      #    - --hook-config=--path-to-file=README.md # Default path
           # - --hook-config=--add-to-existing-file=true # If you have existing content
           # - --hook-config=--create-file-if-not-exist=true
 
