@@ -42,6 +42,15 @@ This file provides the necessary information to describe how to use the template
 | [.pre-commit-config.yaml](./.pre-commit-config.yaml) | Contains the configuration of pre-commit. |
 
 #### Usage
+First, install dependencies:
+```bash
+brew install terraform
+brew install tflint
+brew install aquasecurity/trivy/trivy
+brew install terraform-docs
+brew install checkov
+```
+
 1. Install pre-commit: `pip install pre-commit` or `brew install pre-commit`
 2. Install git hooks: `pre-commit install`
 3. Run manually: `pre-commit run --all-files`

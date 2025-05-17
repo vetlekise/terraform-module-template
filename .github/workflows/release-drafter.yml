@@ -18,8 +18,8 @@ jobs:
   update_release_draft:
     # Permissions required by release-drafter
     permissions:
-      contents: write          
-      pull-requests: write     
+      contents: write
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       # (Optional) If you are using GitHub Enterprise, set the GHE_HOST

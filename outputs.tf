@@ -6,6 +6,6 @@ output "output_foo_value" {
 }
 
 output "sub_module_output_data" {
-  description = "Data output from the sub_module_example."
-  value       = module.sub_module_example.sub_output_value
+  description = "Data output from the sub_module."
+  value       = module.sub_module.sub_output_value
 }
