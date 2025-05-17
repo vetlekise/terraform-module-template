@@ -1,16 +1,5 @@
 name-template: 'v$RESOLVED_VERSION'
 tag-template: 'v$RESOLVED_VERSION'
-categories:
-  - title: '🚀 Features'
-    labels:
-      - 'enhancement'
-  - title: '🐛 Bug Fixes'
-    labels:
-      - 'bug'
-  - title: '🧰 Maintenance'
-    label: 'chore'
-  - title: '📖 Documentation'
-    label: 'documentation'
 
 exclude-labels:
   - 'internal'
@@ -28,7 +17,7 @@ version-resolver:
       - 'patch'
   default: patch
 template: |
-  ## What's Changed in v$RESOLVED_VERSION
+  ## What's Changed
   $CHANGES
 
   **Full Changelog**: https://github.com/$OWNER/$REPOSITORY/compare/$PREVIOUS_TAG...v$RESOLVED_VERSION
