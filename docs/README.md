@@ -28,11 +28,11 @@ This file provides the necessary information to describe how to use the template
 | [.github/workflows/terraform-docs.yml](./.github/workflows/terraform-docs.yml) | Contains the workflow that runs Terraform Docs. |
 | [.terraform-docs.yml](./.terraform-docs.yml) | Contains the configuration of Terraform Docs. |
 
-### [TFLint](https://github.com/terraform-docs/terraform-docs) & [Trivy](https://github.com/aquasecurity/trivy)
+### [TFLint](https://github.com/terraform-docs/terraform-docs), [Trivy](https://github.com/aquasecurity/trivy) & [Checkov](https://github.com/bridgecrewio/checkov)
 #### Configuration
 | File | Description |
 |--|--|
-| [.github/workflows/terraform-linter.yml](./.github/workflows/terraform-docs.yml) | Contains the workflow that runs TFLint and Trivy. |
+| [.github/workflows/terraform-linter.yml](./.github/workflows/terraform-docs.yml) | Contains the workflow that runs TFLint, Trivy & Checkov. |
 | [.tflint.hcl](./.tflint.hcl) | Contains the configuration of TFLint. |
 
 ### [Pre-commit](https://github.com/pre-commit/pre-commit)

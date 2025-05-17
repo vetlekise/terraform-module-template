@@ -1,4 +1,4 @@
-name: TFLint & Trivy
+name: TFLint, Trivy & Checkov
 
 on:
   push:
@@ -6,6 +6,9 @@ on:
       - main
   pull_request:
     types: [opened, synchronize]
+
+permissions:
+  contents: read
 
 jobs:
   tflint:
@@ -44,7 +47,13 @@ jobs:
           # You can also use: brew install aquasecurity/trivy/trivy if brew is available
 
       - name: Run Trivy IaC scan
-        run: trivy config --exit-code 1 --severity HIGH,CRITICAL --format table .
-        # Adjust --exit-code and --severity as needed for your policy
-        # For PR comments or artifact uploads, consider SARIF format:
-        # trivy config --exit-code 1 --severity HIGH,CRITICAL --format sarif --output trivy-results.sarif .
+        run: trivy config .
+
+  checkov:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run Checkov
+        uses: bridgecrewio/checkov-action@v12
