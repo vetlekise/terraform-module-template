@@ -43,7 +43,7 @@ repos:
       #   args:
       #     - '--args=--security-checks=vuln,config'
 
-      - id: checkov # Scans for infrastructure-as-code misconfigurations
+      - id: terraform_checkov # Scans for infrastructure-as-code misconfigurations
         # args:
           # - --args=--framework terraform # Specify framework if needed
           # - --args=--quiet # To reduce verbosity
