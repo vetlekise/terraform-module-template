@@ -16,7 +16,6 @@ permissions:
 
 jobs:
   update_release_draft:
-    # Permissions required by release-drafter
     permissions:
       contents: write
       pull-requests: write
