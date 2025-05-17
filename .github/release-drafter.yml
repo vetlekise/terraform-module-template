@@ -17,7 +17,7 @@ version-resolver:
       - 'patch'
   default: patch
 template: |
-  ## What's Changed
+  ## Changelog
   $CHANGES
 
   **Full Changelog**: https://github.com/$OWNER/$REPOSITORY/compare/$PREVIOUS_TAG...v$RESOLVED_VERSION
