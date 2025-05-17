@@ -38,7 +38,7 @@ module "example" {
 
 | Name | Version |
 |------|---------|
-| <a name="provider_null"></a> [null](#provider\_null) | ~> 3.0 |
+| <a name="provider_null"></a> [null](#provider\_null) | 3.2.4 |
 
 ## Modules
 
@@ -64,7 +64,7 @@ module "example" {
 | Name | Description |
 |------|-------------|
 | <a name="output_output_foo_value"></a> [output\_foo\_value](#output\_output\_foo\_value) | The example output value based on input\_foo. |
-| <a name="output_sub_module_output_data"></a> [sub\_module\_output\_data](#output\_sub\_module\_output\_data) | Data output from the sub\_module\_example. |
+| <a name="output_sub_module_output_data"></a> [sub\_module\_output\_data](#output\_sub\_module\_output\_data) | Data output from the sub\_module. |
 <!-- END_TF_DOCS -->
 
 > End of generated docs by terraform-docs
