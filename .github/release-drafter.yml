@@ -33,9 +33,6 @@ template: |
 
   **Full Changelog**: https://github.com/$OWNER/$REPOSITORY/compare/$PREVIOUS_TAG...v$RESOLVED_VERSION
 
-  ## Contributors
-  $CONTRIBUTORS
-
 autolabeler:
   - label: 'documentation' # This label will be applied
     files: # If any of these files/paths are modified
