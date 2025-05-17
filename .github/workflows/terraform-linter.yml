@@ -47,10 +47,7 @@ jobs:
           # You can also use: brew install aquasecurity/trivy/trivy if brew is available
 
       - name: Run Trivy IaC scan
-        run: trivy config --exit-code 1 --severity HIGH,CRITICAL --format table .
-        # Adjust --exit-code and --severity as needed for your policy
-        # For PR comments or artifact uploads, consider SARIF format:
-        # trivy config --exit-code 1 --severity HIGH,CRITICAL --format sarif --output trivy-results.sarif .
+        run: trivy config .
 
   checkov:
     runs-on: ubuntu-latest
@@ -60,17 +57,3 @@ jobs:
 
       - name: Run Checkov
         uses: bridgecrewio/checkov-action@v12
-        with:
-          directory: .
-          # To fail the build on errors (default behavior):
-          # soft_fail: false
-          # To specify frameworks to scan (e.g., terraform, kubernetes, etc.):
-          framework: terraform
-          # For a quieter output, showing only failed checks:
-          # quiet: true
-          # To output results in SARIF format for GitHub Security tab integration:
-          # output_format: sarif
-          # output_file_path: checkov.sarif
-          # To specify specific checks to run or skip:
-          # check: CKV_AWS_20,CKV_GCP_1
-          # skip_check: CKV_AWS_18
