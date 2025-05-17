@@ -13,14 +13,6 @@ module "example" {
   # Use commit hash to prevent supply chain attacks.
   # source = "github.com/your-organization/your-repository-name?ref=v1.0.0
   source = "github.com/organization/repository?ref=a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0"
-
-  input_tags = {
-    Environment = "Dev"
-    Project     = "MyAwesomeProject"
-  }
-
-  input_foo = "custom_bar_value"
-  # ... add additional optional variables when needed
 }
 ```
 
