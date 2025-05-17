@@ -24,39 +24,26 @@ module "example" {
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.0 |
-| <a name="requirement_null"></a> [null](#requirement\_null) | ~> 3.0 |
 
 ## Providers
 
-| Name | Version |
-|------|---------|
-| <a name="provider_null"></a> [null](#provider\_null) | 3.2.4 |
+No providers.
 
 ## Modules
 
-| Name | Source | Version |
-|------|--------|---------|
-| <a name="module_sub_module"></a> [sub\_module](#module\_sub\_module) | ./modules/sub_module | n/a |
+No modules.
 
 ## Resources
 
-| Name | Type |
-|------|------|
-| [null_resource.example_resource](https://registry.terraform.io/providers/hashicorp/null/latest/docs/resources/resource) | resource |
+No resources.
 
 ## Inputs
 
-| Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
-| <a name="input_input_foo"></a> [input\_foo](#input\_input\_foo) | An example string input variable. | `string` | `"bar"` | no |
-| <a name="input_input_tags"></a> [input\_tags](#input\_input\_tags) | A map of tags to apply to resources. | `map(string)` | `{}` | no |
+No inputs.
 
 ## Outputs
 
-| Name | Description |
-|------|-------------|
-| <a name="output_output_foo_value"></a> [output\_foo\_value](#output\_output\_foo\_value) | The example output value based on input\_foo. |
-| <a name="output_sub_module_output_data"></a> [sub\_module\_output\_data](#output\_sub\_module\_output\_data) | Data output from the sub\_module. |
+No outputs.
 <!-- END_TF_DOCS -->
 
 > End of generated docs by terraform-docs
