@@ -1,7 +1,7 @@
-# Module
+# Module Name
 
 > Insert one-liner description here.
-> 
+>
 > Example: This Terraform module deploys an APPLICATION on PROVIDER using SERVICE.
 
 ## Usage
