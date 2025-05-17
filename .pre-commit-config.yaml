@@ -32,10 +32,6 @@ repos:
           # - --hook-config=--create-file-if-not-exist=true
 
       - id: terraform_tflint # Lints your Terraform code for errors and best practices
-        args:
-          - '--args=--only=google' # Example: if you only use Google provider
-          - '--args=--enable-rule=terraform_deprecated_interpolation'
-          - '--args=--enable-rule=terraform_deprecated_index'
         # Ensure tflint is installed and configured separately if needed (e.g., with a .tflint.hcl file)
 
       - id: terraform_trivy # Scans for security vulnerabilities (tfsec is now part of Trivy)
