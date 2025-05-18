@@ -11,7 +11,7 @@ This file provides the necessary information to describe how to use the template
 | [main.tf](./main.tf) | Core resources and their configurations. |
 | [outputs.tf](./outputs.tf) | Declares values to be outputted after applying. |
 | [variables.tf](./variables.tf) | Defines input parameters to customize the module. |
-| [versions.tf](./versions.tf) | Defines input parameters to customize the module. |
+| [versions.tf](./versions.tf) | Specifies required provider versions and the Terraform version for the module. |
 
 ## Dependencies
 ### [Release Drafter](https://github.com/release-drafter/release-drafter)
@@ -34,6 +34,8 @@ This file provides the necessary information to describe how to use the template
 |--|--|
 | [.github/workflows/terraform-linter.yml](./.github/workflows/terraform-docs.yml) | Contains the workflow that runs TFLint, Trivy & Checkov. |
 | [.tflint.hcl](./.tflint.hcl) | Contains the configuration of TFLint. |
+| [.checkov.yaml](./.checkov.yaml) | Contains the configuration of Chekov. |
+| [trivy.yaml](./trivy.yaml) | Contains the configuration of Trivy. |
 
 ### [Pre-commit](https://github.com/pre-commit/pre-commit)
 #### Configuration
@@ -43,16 +45,30 @@ This file provides the necessary information to describe how to use the template
 
 #### Usage
 First, install dependencies:
+
+##### macOS
 ```bash
+brew install python
 brew install terraform
 brew install tflint
 brew install aquasecurity/trivy/trivy
 brew install terraform-docs
 brew install checkov
+brew install pre-commit
 ```
 
-1. Install pre-commit: `pip install pre-commit` or `brew install pre-commit`
-2. Install git hooks: `pre-commit install`
-3. Run manually: `pre-commit run --all-files`
-4. Run specific id: `pre-commit run <hook_id>`
-5. Skip hooks: `git commit --no-verify -m "Your commit message"`
+##### Windows
+```powershell
+choco install python --pre 
+choco install terraform
+choco install tflint
+choco install trivy
+choco install terraform-docs
+pip install checkov
+pip install pre-commit
+```
+
+1. Install git hooks: `pre-commit install`
+1. Run manually: `pre-commit run --all-files`
+1. Run specific id: `pre-commit run <hook_id>`
+1. Skip hooks: `git commit --no-verify -m "Your commit message"`
