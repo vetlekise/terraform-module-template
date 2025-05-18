@@ -16,7 +16,7 @@ module "example" {
 }
 ```
 
-> Start of generated docs by terraform-docs
+> Beginning of generated docs
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
@@ -46,4 +46,4 @@ No inputs.
 No outputs.
 <!-- END_TF_DOCS -->
 
-> End of generated docs by terraform-docs
+> End of generated docs

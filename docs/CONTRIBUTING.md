@@ -1,13 +1,12 @@
 # Contributing
-
-These guidelines outline how to contribute to [Your Project Name].
+These guidelines outline how to contribute to the project.
 
 ## Issues
-Before starting work, check the [Issue Tracker](link-to-your-issue-tracker) for existing tasks. If your intended contribution isn't listed, open a new issue to discuss the proposed changes or bug.
+Before starting any work, check for existing issues. If your intended contribution isn't listed, open a new issue to discuss the proposed changes or bug.
 
 ## Fork & Branch
 1. Fork the repository.
-2. Clone your fork locally: `git clone https://github.com/YOUR_USERNAME/[Your Project Name].git`
+2. Clone your fork locally: `git clone https://github.com/USERNAME/PROJECT.git`
 3. Create a new branch for your work: `git checkout -b your-branch-name` (e.g., `feat/new-login` or `fix/button-alignment-123`).
 
 ## Development
@@ -30,10 +29,10 @@ Labels on PRs are essential for automated release notes and version management.
 These define the type of change for release notes.
 
 1. `feature`: Introduces new functionality.
-2. `enhancement`: Improves existing functionality.
-3. `bug` / `fix` / `bugfix`: Corrects an error or unintended behavior.
-4. `documentation`: Changes to documentation files only.
-5. `chore`: Maintenance, build process, or non-user-facing updates.
+1. `enhancement`: Improves existing functionality.
+1. `bug` / `fix` / `bugfix`: Corrects an error or unintended behavior.
+1. `documentation`: Changes to documentation files only.
+1. `chore`: Maintenance, build process, or non-user-facing updates.
 
 > Labels may be automatically applied by our tools. If not, maintainers will assign the correct one(s).
 
