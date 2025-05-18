@@ -47,3 +47,6 @@ No outputs.
 <!-- END_TF_DOCS -->
 
 > End of generated docs
+
+## Contributing
+Start by reviewing [CONTRIBUTING.md](./docs/CONTRIBUTING.md) for guidelines on how to contribute to this project.
