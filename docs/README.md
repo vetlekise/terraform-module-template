@@ -70,7 +70,7 @@ brew install pre-commit
 
 **Windows**
 ```powershell
-choco install python --pre 
+choco install python --pre
 choco install terraform
 choco install tflint
 choco install trivy
