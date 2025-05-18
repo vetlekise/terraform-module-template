@@ -29,6 +29,8 @@ autolabeler:
       - 'docs/*'
     branch:
       - '/docs{0,1}\/.+/'
+    title:
+      - '/(docs)/i'
   - label: 'bug'
     branch:
       - '/bug\/.+/'
