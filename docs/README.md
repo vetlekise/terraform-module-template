@@ -26,7 +26,7 @@ Automates the creation of draft release notes for your GitHub releases based on 
 ### [Terraform Docs](https://github.com/terraform-docs/terraform-docs/?tab=readme-ov-file)
 Generates documentation from Terraform modules in various output formats (e.g., Markdown tables for READMEs). This helps keep your module's inputs, outputs, and providers documentation up-to-date.
 
-#### Configuration
+#### Location
 | File | Description |
 |--|--|
 | [.github/workflows/terraform-docs.yml](./.github/workflows/terraform-docs.yml) | Contains the workflow that runs Terraform Docs. |
