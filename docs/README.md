@@ -38,7 +38,7 @@ These tools help ensure your Terraform code is valid, follows best practices, an
 * **Trivy**: A comprehensive security scanner that can find vulnerabilities in your Infrastructure as Code (IaC).
 * **Checkov**: A static code analysis tool for IaC to find misconfigurations that may lead to security or compliance problems.
 
-#### Configuration
+#### Location
 | File | Description |
 |--|--|
 | [.github/workflows/terraform-linter.yml](./.github/workflows/terraform-docs.yml) | Contains the workflow that runs TFLint, Trivy & Checkov. |
@@ -49,7 +49,7 @@ These tools help ensure your Terraform code is valid, follows best practices, an
 ### [Pre-commit](https://github.com/pre-commit/pre-commit)
 A framework for managing and maintaining multi-language pre-commit hooks. It runs checks on your code before you commit, helping to enforce code quality and catch issues early.
 
-#### Configuration
+#### Location
 | File | Description |
 |--|--|
 | [.pre-commit-config.yaml](./.pre-commit-config.yaml) | Contains the configuration of pre-commit. |
