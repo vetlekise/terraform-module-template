@@ -17,7 +17,7 @@ This document provides an overview of this docs directory and the template's dev
 ### [Release Drafter](https://github.com/release-drafter/release-drafter)
 Automates the creation of draft release notes for your GitHub releases based on merged pull requests.
 
-#### Configuration
+#### Location
 | File | Description |
 |--|--|
 | [.github/workflows/release-drafter.yml](./.github/workflows/release-drafter.yml) | Contains the workflow that runs Release Drafter. |
