@@ -10,6 +10,8 @@ on:
       - ".checkov.yaml"
       - ".github/workflows/terraform-linter.yml"
   pull_request:
+    types: [opened, synchronize]
+    branches: ["main"]
     paths:
       - "**.tf"
       - ".tflint.hcl"

@@ -7,6 +7,8 @@ on:
       - "**.tf"
       - ".terraform-docs.yml"
   pull_request:
+    types: [opened, synchronize]
+    branches: ["main"]
     paths:
       - "**.tf"
       - ".terraform-docs.yml"
