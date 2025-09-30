@@ -2,10 +2,20 @@ name: TFLint, Trivy & Checkov
 
 on:
   push:
-    branches:
-      - main
+    branches: ["main"]
+    paths:
+      - "**.tf"
+      - ".tflint.hcl"
+      - "trivy.yaml"
+      - ".checkov.yaml"
+      - ".github/workflows/terraform-linter.yml"
   pull_request:
-    types: [opened, synchronize]
+    paths:
+      - "**.tf"
+      - ".tflint.hcl"
+      - "trivy.yaml"
+      - ".checkov.yaml"
+      - ".github/workflows/terraform-linter.yml"
 
 permissions:
   contents: read
