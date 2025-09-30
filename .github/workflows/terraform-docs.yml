@@ -2,10 +2,16 @@ name: Terraform Docs
 
 on:
   push:
-    branches:
-      - main
+    branches: ["main"]
+    paths:
+      - "**.tf"
+      - ".terraform-docs.yml"
   pull_request:
     types: [opened, synchronize]
+    branches: ["main"]
+    paths:
+      - "**.tf"
+      - ".terraform-docs.yml"
 
 permissions:
   contents: write
