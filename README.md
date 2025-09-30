@@ -1,8 +1,7 @@
-# Module Name
+# [Module Name]
 
-> Insert one-liner description here.
->
-> Example: This Terraform module deploys an APPLICATION on PROVIDER using SERVICE.
+> [!NOTE]
+> *Example: This Terraform module deploys a [resource type, e.g., VPC, Kubernetes cluster] on [cloud provider, e.g., AWS, Azure] using [specific services, e.g., EC2, AKS].*
 
 ## Usage
 
