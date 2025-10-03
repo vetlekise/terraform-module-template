@@ -1,7 +1,6 @@
 # [Module Name]
 
-> [!NOTE]
-> *Example: This Terraform module deploys a [resource type, e.g., VPC, Kubernetes cluster] on [cloud provider, e.g., AWS, Azure] using [specific services, e.g., EC2, AKS].*
+This Terraform module deploys a [resource type, e.g., VPC, Kubernetes cluster] on [cloud provider, e.g., AWS, Azure] using [specific services, e.g., EC2, AKS].
 
 ## Usage
 
