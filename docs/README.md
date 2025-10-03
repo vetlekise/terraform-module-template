@@ -1,4 +1,4 @@
-# Information
+# Documentation
 This document provides an overview of this docs directory and the development tooling.
 
 ## File Structure
@@ -28,23 +28,3 @@ A framework for managing and maintaining multi-language pre-commit hooks. It run
 
 ### [Release Drafter](https://github.com/release-drafter/release-drafter)
 Automates the creation of draft release notes for your GitHub releases based on merged pull requests. Its configuration and workflow are in the `.github` directory.
-
-## Local Development Usage
-### Install Dependencies
-You will need to install the following tools locally to use the pre-commit hooks.
-
-#### macOS (via [Homebrew](https://github.com/homebrew))
-```bash
-brew install terraform tflint trivy terraform-docs checkov pre-commit
-```
-
-#### Windows (via [Chocolatey](https://github.com/chocolatey/choco))
-```powershell
-choco install terraform tflint trivy terraform-docs
-pip install checkov pre-commit
-```
-
-### Using Pre-commit
-- **Install git hooks**: `pre-commit install` (This only needs to be run once per project clone).
-- **Manually run on all files**: `pre-commit run --all-files`
-- **Skip hooks for a single commit**: `git commit --no-verify -m "Your commit message"`
